@@ -1,0 +1,19 @@
+dataSet <- corpora     #All of the tweets to be preprocessed
+for each tweet in dataSet
+    token_str[] <- tokenize(tweet)
+    processed_str[] <- removeStop(token_str)
+
+
+def tokenize(tweet)
+    tokenized_str[] <- #split each word separated in whitespace
+                     #or special words such as Mr.
+    return tokenize_str[]
+
+def removeStop(token_str[])
+    stop_words <- #list of filipino and english stop words
+    processed_str[]
+    for each token in token_str
+        if token not in stop_words -> processed_str[] <- token
+
+    return processed_str[]
+    
